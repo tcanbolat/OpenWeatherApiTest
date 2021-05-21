@@ -32,7 +32,11 @@ $(document).ready(() => {
       dataType: 'json',
       success: (data) => {
         // create history link for this search
+        console.log(history);
         if (history.indexOf(searchValue) === -1) {
+          if (history.length === 10) {
+            history.shift();
+          }
           history.push(searchValue);
           window.localStorage.setItem('history', JSON.stringify(history));
 
