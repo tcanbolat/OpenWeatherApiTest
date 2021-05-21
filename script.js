@@ -31,7 +31,6 @@ $(document).ready(() => {
         '&units=imperial',
       dataType: 'json',
       success: (data) => {
-        console.log(data);
         // create history link for this search
         if (history.indexOf(searchValue) === -1) {
           history.push(searchValue);
@@ -83,7 +82,6 @@ $(document).ready(() => {
   };
 
   const getForecast = (coords) => {
-    console.log(coords);
     $.ajax({
       type: 'GET',
       url:
@@ -97,7 +95,6 @@ $(document).ready(() => {
         '&units=imperial',
       dataType: 'json',
       success: (data) => {
-        console.log(data);
         // overwrite any existing content with title and empty row
         $('#forecast')
           .html('<h4 class="mt-3">5-Day Forecast:</h4>')
