@@ -13,3 +13,5 @@ Features:
   3. Forecast stats that calculate the minimun temperature, maximum temperature, mean temperature, and mode temperature of the next five days.
   4. saves the last 10 searched cities using local storage.
   5. fully responsive layout using bootstrap.
+
+- Mean and Mode are calculated using the Day temperatures.
