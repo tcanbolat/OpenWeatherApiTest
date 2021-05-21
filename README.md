@@ -12,3 +12,4 @@ Features:
   2. gets 5 day forecast with morning, day, night, max temp, min temp, and humidity.
   3. Forecast stats that calculate the minimun temperature, maximum temperature, mean temperature, and mode temperature of the next five days.
   4. saves the last 10 searched cities using local storage.
+  5. fully responsive layout using bootstrap.
